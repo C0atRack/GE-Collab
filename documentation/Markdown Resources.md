@@ -1,6 +1,6 @@
 # Markdown Resources
 - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
+- [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 - [StackEdit | Free Online Markdown Editor](https://stackedit.io/app#)
 	- Shows both the raw Markdown alongside it's rendered version.
 	- Possible workflow: 
