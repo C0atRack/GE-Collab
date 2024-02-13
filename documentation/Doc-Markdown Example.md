@@ -88,10 +88,10 @@ Images can not be directly embedded into Markdown files, at least not easily. Yo
 To do so, follow these steps:
 
 1. Upload your image to the [images](https://github.com/C0atRack/GE02-Collab/tree/main/images) folder of the repository:
-	![Step #1 of adding images to a Markdown file](https://github.com/C0atRack/GE02-Collab/blob/main/images/Embed%20Images%20Step%201.png?raw=true)
+	![Step #1 of adding images to a Markdown file](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Embedding%20Images/Embed%20Images%20Step%201.png?raw=true)
 
 1. After uploading the image, browse to the image on Github and open it. It should look something like this:
-	![Step #2 of adding images to a Markdown file](https://github.com/C0atRack/GE02-Collab/blob/main/images/Embed%20Images%20Step%202.png?raw=true)
+	![Step #2 of adding images to a Markdown file](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Embedding%20Images/Embed%20Images%20Step%202.png?raw=true)
 
 1. Copy the link from the URL bar, and then add `?raw=true` to the end. It should end up looking something like this:
 	```
