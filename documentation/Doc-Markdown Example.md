@@ -14,7 +14,7 @@ Italics are done with \*'s:
 
 ## Bold
 
-Bold font is done with doub;e \*'s:
+Bold font is done with double \*'s:
 
 ```
 **This is bold!**
