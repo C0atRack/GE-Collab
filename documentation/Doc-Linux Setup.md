@@ -8,7 +8,7 @@ Header over to the [Visual Studio Code](https://code.visualstudio.com/) website 
 
 - For Ubuntu and other Debian based systems choose the .deb file and install with 
 
-		sudo apt install ./path/to/file/location/code_1.XX.X-XXXX_amd64.deb
+		sudo apt install \<path to download location of the deb file>/code_1.XX.X-XXXX_amd64.deb
 
 	- *Hint: While typing hitting tab will tell bash to try and autocomplete what you were typing. This is very useful in this step when typing the filepath to the deb.*
 	- *This also works when typing `code_1.XX.X-XXXX_amd64.deb`. If you type in `code` and hit tab, bash will fill in the rest of the name for you!*
@@ -29,7 +29,7 @@ If the version of Python reported is anything but `Python 3.11.X` follow the ste
 Otherwise, you can jump to [Installing PIP (if missing)](#installing-pip-if-missing)
 
 
-## Using Python 3.11 using Dev Containers
+## Working with Python 3.11 via Dev Containers
 
 A method to use Python 3.11 on a system with a different version is to the Dev Containers Extention for Visual Studio Code. Dev Containers utilizes Docker to run a separate Linux system inside of your current distribution. By selecting the proper image you can use a Linux system that comes with Python 3.11 installed for development. Best of all, Dev Containers will appear mostly seamless while using Visual Studio Code and you will be able to use all of the normal Python debugging features.
 
@@ -42,7 +42,7 @@ docker help
 
 If running this command results in a messages stating `Command docker not found`, follow the instructions below. Otherwise, you can skip to [Allow Docker Access from a non-root User](#allow-docker-access-from-a-non-root-user).
 
-Navigate to the [Install Docker Engine](https://docs.docker.com/engine/install/) page. You do not want to use the linke that says `Docker Desktop for XXX`, instead click on your Linux distribution. Then, follow the listed instructions to install Docker. 
+Navigate to the [Install Docker Engine](https://docs.docker.com/engine/install/#supported-platforms) page. You do not want to use the link that says `Docker Desktop for XXX`, instead click on your Linux distribution in the [Supported platforms](https://docs.docker.com/engine/install/#supported-platforms) table. Then, follow the listed instructions to install Docker. Follow whichever option **does not** install Docker desktop.
 
 ### Allow Docker Access from a non-root User
 
@@ -83,10 +83,10 @@ The following steps will guide you on creating a Django project within a Python 
 	![Skipping adding any features to the container](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2008%20Skip%20Select%20Features.png)
 1. Dev Containers has now created the `devcontainer.json` file within a folder called `.devcontainer`. A prompt will appear offering to reopen the folder in Dev Container. Click on the button that says **Reopen in container**. Visual Studio Code will reload.
 	![Clicking reopen in container](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2009%20Reopen%20in%20Container.png)
-1. Open Visual Studio Code reopens, wait for Dev Containers to finish starting up the Docker container. It will take a while to start as it has to pull many Docker images and install extensions to allow for remote debugging.
+1. Open Visual Studio Code reopens, wait for Dev Containers to finish starting up the Docker container. It will take a while to start as it has to pull many Docker images and install extensions to allow for remote debugging. While it is opening, click the blue text that says `Starting Dev Container (show log)`. This comes in handy for the next step.
 	![Dev Container waiting for Docker](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2010%20Dev%20Container%20Starting.png)
 	![Dev Container waiting for Docker](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2011%20Dev%20Container%20Started.png)
-1. Once you windows looks like the picture below, click on the **+**/**New Terminal Button** at the top of the terminal windows. You will be dropped into a bash shell inside of the container.
+1. Once you windows looks like the picture below, click on the **+**/**New Terminal Button** at the top of the terminal window. You can also do this by clicking the **Terminal** tab at the top of the screen and click **New Terminal**. You will be dropped into a bash shell inside of the container.
 	![Open new bash shell](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2012%20Open%20New%20Shell.png)
 	![Open new bash shell](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2013%20New%20Shell.png)
 1. (Optionally) You can now check the version of Python using `python3 --version`
