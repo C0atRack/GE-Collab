@@ -33,14 +33,14 @@ When you activate your venv, you are changing your PATH variable so the Scripts 
    ```
 Upon activating your virtual environment, you should see the name of your virtual environment before the cursor prompt as show below.
 <!--insert image 'Windows Setup Activation' here -->
-
+![Windows Setup Activate Venv](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Images/Windows%20Setup%20Activation.png?raw=true)
 ### Install django in virtual environment
 Assuming you are now in your virtual environment, install Django with this command
 ```
 pip install django
 ```
 <!--insert image 'Windows Setup Install' here -->
-
+![Windows Setup Install](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Images/Windows%20Setup%20Install.png?raw=true)
 ### Update pip
 Upon using a pip command, you may have received a notice that a new release is available.
 <!-- insert image 'Windows setup update' here -->
@@ -49,7 +49,7 @@ To update pip, use this command
 python -m pip install --upgrade pip
 ```
 <!-- insert 'Windows Setup Update 2' here -->
-
+![Windows Setup Update 2](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Images/Windows%20Setup%20Update%202.png?raw=true)
 ### Create Django project
 
 ### Run server
@@ -67,14 +67,15 @@ For more on the specific virtual environment tool suggested by Deb, see: [Python
 
 ## Troubleshooting
 ### Scripts disabled from running on your system
-![Scripts disabled step #1](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Troubleshooting%201.png?raw=true)
+![Scripts disabled step #1](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Troubleshooting%201.png?raw=true)  
 
-1. Navigate to [about_Execution_Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4)
+1. Navigate to [about_Execution_Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4)  
 2. Determine your preferred execution policy. Each has a description on the Microsoft website.
 3. Run the Windows Powershell as an Administrator
-<!-- Insert image here -->
+<!-- Insert image 'Windows Setup Troubleshooting 2' here -->
+![Windows Setup troubleshooting 2](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Images/Windows%20Setup%20Troubleshooting%202.png?raw=true)  
+
 4. Set your execution policy with this command:  
    `Set-ExecutionPolicy -ExecutionPolicy <policy_name>`
-<!-- Insert image here -->
 5. Enter 'y' when prompted
 6. Refer back to Activating Virtual Environment
