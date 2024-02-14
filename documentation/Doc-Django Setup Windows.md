@@ -30,3 +30,24 @@ The Windows installer incorporates pip3 (the Python package manager) by default.
    ```
    <venv_directory>\Scripts\activate.bat
    ```
+### Install django in virtual environment
+
+### Upgrade pip
+
+### Create Django project
+
+### Run server
+
+### Confirm Django installation
+
+### Create requirements file
+
+### Deactivating a virtual environment
+   
+### Deleteing a virtual environment
+
+For more information on setting up a Django venv, see: [Setting up a Django development environment](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment)  
+For more on the specific virtual environment tool suggested by Deb, see: [Python virtualenv](https://python.land/virtual-environments/virtualenv)  
+
+### Troubleshooting
+#### Scripts disabled from running on your system
