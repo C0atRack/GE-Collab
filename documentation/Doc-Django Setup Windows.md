@@ -1,4 +1,4 @@
-## Django 4.2 Setup For Windows 10
+## Django 4.2 Setup For Windows 10 or 11
 ##### Written by Kass Ramirez
 
 ### Python Compatibility
@@ -22,6 +22,7 @@ The Windows installer incorporates pip3 (the Python package manager) by default.
    virtualenv [directory]
    ```
 ### Activating Virtual Environment
+When you activate your venv, you are changing your PATH variable so the Scripts directory of your venv is put in front of everything else.
 1. To activate in Windows Powershell
      ```
      <venv_directory>\Scripts\Activate.ps1
@@ -30,9 +31,24 @@ The Windows installer incorporates pip3 (the Python package manager) by default.
    ```
    <venv_directory>\Scripts\activate.bat
    ```
-### Install django in virtual environment
+Upon activating your virtual environment, you should see the name of your virtual environment before the cursor prompt as show below.
+<!--insert image 'Windows Setup Activation' here -->
 
-### Upgrade pip
+### Install django in virtual environment
+Assuming you are now in your virtual environment, install Django with this command
+```
+pip install django
+```
+<!--insert image 'Windows Setup Install' here -->
+
+### Update pip
+Upon using a pip command, you may have received a notice that a new release is available.
+<!-- insert image 'Windows setup update' here -->
+To update pip, use this command
+```
+python -m pip install --upgrade pip
+```
+<!-- insert 'Windows Setup Update 2' here -->
 
 ### Create Django project
 
@@ -49,8 +65,8 @@ The Windows installer incorporates pip3 (the Python package manager) by default.
 For more information on setting up a Django venv, see: [Setting up a Django development environment](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment)  
 For more on the specific virtual environment tool suggested by Deb, see: [Python virtualenv](https://python.land/virtual-environments/virtualenv)  
 
-### Troubleshooting
-#### Scripts disabled from running on your system
+## Troubleshooting
+### Scripts disabled from running on your system
 ![Scripts disabled step #1](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Troubleshooting%201.png?raw=true)
 
 1. Navigate to [about_Execution_Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4)
