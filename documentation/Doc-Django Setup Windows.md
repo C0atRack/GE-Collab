@@ -51,3 +51,14 @@ For more on the specific virtual environment tool suggested by Deb, see: [Python
 
 ### Troubleshooting
 #### Scripts disabled from running on your system
+![Scripts disabled step #1](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Troubleshooting%201.png?raw=true)
+
+1. Navigate to [about_Execution_Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4)
+2. Determine your preferred execution policy. Each has a description on the Microsoft website.
+3. Run the Windows Powershell as an Administrator
+<!-- Insert image here -->
+4. Set your execution policy with this command:  
+   `Set-ExecutionPolicy -ExecutionPolicy <policy_name>`
+<!-- Insert image here -->
+5. Enter 'y' when prompted
+6. Refer back to Activating Virtual Environment
