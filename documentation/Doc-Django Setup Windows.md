@@ -39,11 +39,16 @@ Assuming you are now in your virtual environment, install Django with this comma
 ```
 pip install django
 ```
+To specifically install version 4.2, use: 
+```
+pip install django==4.2
+```
 <!--insert image 'Windows Setup Install' here -->
 ![Windows Setup Install](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Images/Windows%20Setup%20Install.png?raw=true)
 ### Update pip
 Upon using a pip command, you may have received a notice that a new release is available.
 <!-- insert image 'Windows setup update' here -->
+![Windows Setup Update](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Images/Windows%20Setup%20Update.png?raw=true)
 To update pip, use this command
 ```
 python -m pip install --upgrade pip
@@ -51,12 +56,47 @@ python -m pip install --upgrade pip
 <!-- insert 'Windows Setup Update 2' here -->
 ![Windows Setup Update 2](https://github.com/C0atRack/GE02-Collab/blob/main/images/Windows%20Setup%20Images/Windows%20Setup%20Update%202.png?raw=true)
 ### Create Django project
+To create a Django 4.2 project, use this command. Note "django_project" can be replaced with whatever name you want to give the project.  
+```
+django-admin startproject django_project
+```
 
+You will benefit from reorganizing your directory with this set of commands:
+```
+mv django_project/manage.py ./
+mv django_project/django_project/* django_project
+rm -r django_project/django_project/
+```
 ### Run server
+To run a server, use this and just ignore the migration warnings: `python manage.py runserver`
 
 ### Confirm Django installation
+You can confirm that your server is running succesfully by going to [http://localhost:8000/](http://localhost:8000/)
+<!-- insert image 'Windows Setup Confirmation' here --> 
+
+### Open Multiple Terminals
+To make things easier, open up two more Powershell tabs. One for:
+- venv to run commands
+- venv starting server and stopping server
+- git/gihub commands
+
+For the other tab using venv, you will have to activate the venv again in the terminal.
 
 ### Create requirements file
+From within your new tab with the virtual environment open, create a requirements file of what is installed.
+```
+pip freeze > requirements.txt
+```
+<!-- insert image 'Windows Setup Requirements' here -->
+
+For more info, see: [List installed Python packages](https://note.nkmk.me/en/python-pip-list-freeze/)  
+
+### Manage project in IDE
+For this example, we will be using VS Code.
+1. Open the project in Visual Studio Code
+2. In Visual Studio Code, go to `File -> Open Folder`
+3. Select the folder that contains your Django project. 
+<!-- insert image 'Windows Setup IDE' here -->
 
 ### Deactivating a virtual environment
    
