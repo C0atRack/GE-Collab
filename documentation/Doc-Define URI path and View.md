@@ -55,7 +55,7 @@ Next run the server from the virtual envioroment by using the command `python ma
 
 Now open http://127.0.0.1:8000 and you should see the home page
 
-
+![What it looks like if working correctly](https://github.com/C0atRack/GE02-Collab/blob/b9db39a06f21f278a94f2cbed3afb2d4cf447af7/images/URI/website.png)
 
 #### For the next part of creating an HTML Template
 Change the protfolio_app/views.py to the following
