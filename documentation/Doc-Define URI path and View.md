@@ -6,14 +6,14 @@ By Vincent Faragalli
 2. Working virtual environment with python
 3. IDE installed -- Recommended Visual Studio Code
 
-Open the portfolio directory and select the django_project/urls.py file to edit it.
+Open the portfolio directory in your IDE
 
-*picure of the directory open*
+![What the IDE should look like](https://github.com/C0atRack/GE02-Collab/blob/369e3bc160a17e927835ddd78bcba80ec9fdb00b/images/URI/faragalli-dir.png?raw=true)
 
-In the Url.py file update the code so that it matches the following. *Need to change to correct code* 
+Select the django_project/urls.py file to edit it and change the Url.py file so that it matches the following. 
 
-The change is so that it will import the path function from django.urls and also include the URL patterns from porfolio_app.urls
-``` Python from django.contrib import admin
+``` Python
+from django.contrib import admin
 from django.urls import path, include
 urlpatterns = [
 path('admin/', admin.site.urls),
@@ -21,7 +21,10 @@ path('admin/', admin.site.urls),
 path('', include('portfolio_app.urls')),
 ]
 ```
-Next Update the file portfolio_app/views.py so it matches the following *ALSO NEED TO CHANGE*
+The change is so that it will import the path function from django.urls and also include the URL patterns from porfolio_app.urls
+
+
+Next Update the file portfolio_app/views.py so it matches the following 
 ``` Python
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -32,34 +35,42 @@ def index(request):
    return HttpResponse('home page')
 
 ```
-Next, Create a new file called urls.py in the portfolio_app directory and add the following code:
+Next, Create a new file called urls.py in the portfolio_app directory and add the code below:
+This code imports the path and views functions for URL patterns
+The path commands define a URL pattern where it will call either the "index" function or the "login" function
+The stub function is for the later HTML documentation
 ``` Python
 from django.urls import path
 from . import views
 
 urlpatterns = [
-#path function defines a url pattern
-#'' is empty to represent based path to app
-# views.index is the function defined in views.py
-# name='index' parameter is to dynamically create url
-# example in html <a href="{% url 'index' %}">Home</a>.
-path('', views.index, name='index'),
+ path('', views.index, name="index"),
+ #TODO: idk
+ path('login', views.stub, name="login"),
 ]
 
+
 ```
-Next run the server from the virtual envioroment by using the command 'python manage.py runserver'
-Now open 	Open http://127.0.0.1:8000  and you should see home page
-*ADD LINK TO THE THIING AND ADD PICTURE OF WHAT THE HOMEPAGE SHOULD LOOK LIKE*
+Next run the server from the virtual envioroment by using the command `python manage.py runserver`
+
+Now open http://127.0.0.1:8000 and you should see the home page
+
+
 
 #### For the next part of creating an HTML Template
 Change the protfolio_app/views.py to the following
 ``` Python
 from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
+
 def index(request):
 # Render index.html
-return render( request, 'portfolio_app/index.html')
+ return render( request, 'portfolio_app/index.html')
+
+def stub(request):
+ return render(request, 'portfolio_app/stub.html')
+ 
 
 ```
+This is done so that when the web application is opened instead of displaying 'hello world' it goes to an HTML document with the code that will be used for the web application.
 If you try and go back to your local port it will not work. This will be fixed in the HTML Template documentation 
