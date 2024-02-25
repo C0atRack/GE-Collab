@@ -92,15 +92,10 @@ pip freeze > requirements.txt
 For more info, see: [List installed Python packages](https://note.nkmk.me/en/python-pip-list-freeze/)  
 
 ### Manage project in IDE
-For this example, we will be using VS Code.
 1. Open the project in Visual Studio Code
 2. In Visual Studio Code, go to `File -> Open Folder`
 3. Select the folder that contains your Django project. 
-<!-- insert image 'Windows Setup IDE' here -->
 
-### Deactivating a virtual environment
-   
-### Deleteing a virtual environment
 
 For more information on setting up a Django venv, see: [Setting up a Django development environment](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment)  
 For more on the specific virtual environment tool suggested by Deb, see: [Python virtualenv](https://python.land/virtual-environments/virtualenv)  
