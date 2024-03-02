@@ -16,7 +16,7 @@ If you have not already, make sure to activate your virtual environment that you
     1. For Windows, remember directories are delimited by a `\`
     1. On Linux, remember directories are delimited by a `/`
 1. Activate your virtual environment.
-    1. For Windows, follow the instructions in [Doc-Django Setup Windows](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/Doc-Django%20Setup%20Windows.md#activating-virtual-environment) document.
+    1. For Windows, follow the instructions in [Doc-Django Setup Windows](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/GE02%20Doc-Django%20Setup%20Windows.md#activating-virtual-environment) document.
     1. If you are on Linux, run `source <venv_directory>/bin/activate`
 
 ## Creating a Django Project
@@ -109,7 +109,7 @@ In this section, we will be adding an app called `example_app` to your Django pr
     ```
  **Make sure you leave a trailing `,` at the end of `"example_app"` so that you can add other apps later.**
 
-Success! You have created a Django App and installed it into your Django Project. To add functionality to your app, such as creating views, urls, and templates, you can follow [Doc - URI paths and View](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/Doc-URI%20paths%20and%20View.md).
+Success! You have created a Django App and installed it into your Django Project. To add functionality to your app, such as creating views, urls, and templates, you can follow [Doc - URI paths and View](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/GE02%20Doc-URI%20paths%20and%20View.md).
 
 # Tools Used
 - [tree.nathfriend.io](https://tree.nathanfriend.io/) to make the file-path ascii art.

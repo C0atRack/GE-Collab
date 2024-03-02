@@ -59,10 +59,10 @@ Afterwards, reboot to make the changes go into affect. To verify, run `docker ru
 1. Open Visual Studio Code
 1. Click on **Extensions** tab the left-hand side bar. *The icon looks like a set of blocks*
 1. In the search bar type **Dev Containers**
-	![Dev Container Extension in Visual Studio Code Extension Tab](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2001%20Finding%20Dev%20Container%20Extention.png)
+	![Dev Container Extension in Visual Studio Code Extension Tab](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2001%20Finding%20Dev%20Container%20Extention.png)
 1. Click on the **Dev Containers** option, and then press install.
-	![Showing the install button](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2002%20Installing%20Dev%20Container%20Extention.png)
-	![Showing Dev Containers has now been installed](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2003%20Dev%20Container%20Extension%20Installed.png)
+	![Showing the install button](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2002%20Installing%20Dev%20Container%20Extention.png)
+	![Showing Dev Containers has now been installed](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2003%20Dev%20Container%20Extension%20Installed.png)
 
 ### Start a Project with Dev Containers with Python 3.11 Image 
 
@@ -72,23 +72,23 @@ The following steps will guide you on creating a Django project within a Python 
 1. Within Visual Studio Code, click on **File**, then **Open Folder**. Browse to the folder you created previously.
 	1. If a prompt appears asking if you trust the code in the folder, click on whichever prompt confirms that you trust the contents.
 1. Once the Visual Studio Code has opened, press `Ctrl+Shift+p` to bring up the command pallet. Once open, begin typing in `Dev Containers: Add` into the text box. Once an option that reads **Dev Containers: Add Dev Container Configuration files...** appears, click on it.
-	![Opening the command palete](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2004%20Command%20Palette.png)
+	![Opening the command palete](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2004%20Command%20Palette.png)
 1. Afterwards, hit enter or click the option that says **Add configuration to user data folder**
-	![Add Dev Container Configuration Files Prompt](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2005%20Add%20Config.png)
+	![Add Dev Container Configuration Files Prompt](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2005%20Add%20Config.png)
 1. Type in `Python 3` and select the top option that reads **Python 3 devcontainers**
-	![Add Dev Container COnfiguration Files Prompt](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2006%20Select%20Python%203.png)
+	![Add Dev Container COnfiguration Files Prompt](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2006%20Select%20Python%203.png)
 1. You will then be presented with a number of Python versions alongside the version of Debian linux they run under. Click on the option that reads **3.11-bookworm**.
-	![Selecting the 3.11-bookworm option](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2007%20Select%203_11_bookworm.png)
+	![Selecting the 3.11-bookworm option](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2007%20Select%203_11_bookworm.png)
 1. Click **OK** on the **Select Features** menu.
-	![Skipping adding any features to the container](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2008%20Skip%20Select%20Features.png)
+	![Skipping adding any features to the container](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2008%20Skip%20Select%20Features.png)
 1. Dev Containers has now created the `devcontainer.json` file within a folder called `.devcontainer`. A prompt will appear offering to reopen the folder in Dev Container. Click on the button that says **Reopen in container**. Visual Studio Code will reload.
-	![Clicking reopen in container](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2009%20Reopen%20in%20Container.png)
+	![Clicking reopen in container](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2009%20Reopen%20in%20Container.png)
 1. Open Visual Studio Code reopens, wait for Dev Containers to finish starting up the Docker container. It will take a while to start as it has to pull many Docker images and install extensions to allow for remote debugging. While it is opening, click the blue text that says `Starting Dev Container (show log)`. This comes in handy for the next step.
-	![Dev Container waiting for Docker](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2010%20Dev%20Container%20Starting.png)
-	![Dev Container waiting for Docker](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2011%20Dev%20Container%20Started.png)
+	![Dev Container waiting for Docker](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2010%20Dev%20Container%20Starting.png)
+	![Dev Container waiting for Docker](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2011%20Dev%20Container%20Started.png)
 1. Once you windows looks like the picture below, click on the **+**/**New Terminal Button** at the top of the terminal window. You can also do this by clicking the **Terminal** tab at the top of the screen and click **New Terminal**. You will be dropped into a bash shell inside of the container.
-	![Open new bash shell](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2012%20Open%20New%20Shell.png)
-	![Open new bash shell](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/Doc-Linux%20DevContainer%2013%20New%20Shell.png)
+	![Open new bash shell](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2012%20Open%20New%20Shell.png)
+	![Open new bash shell](https://github.com/C0atRack/GE02-Collab/blob/main/images/Doc%20Linux%20DevContainer/GE02%20Doc-Linux%20DevContainer%2013%20New%20Shell.png)
 1. (Optionally) You can now check the version of Python using `python3 --version`
 
 
