@@ -27,7 +27,11 @@ Once a model has been created, the model must be added to the admin.py file befo
 after this, each model must be individually added with code in the admin file. 
 #### admin.site.register(My_Model)
 Once the model is added to the admin.py file, the user must perform a migration. First a migration file must be made, then it must be migrated. from the command line you can accomplish this with:
-####    ./manage.py makemigrations
-####    ./manage.py migrate
-This should tell Django to create a database table for each of your classes. For more information about migrating in Django see https://www.geeksforgeeks.org/django-basic-app-model-makemigrations-and-migrate/
-
+'   ./manage.py makemigrations'
+'   ./manage.py migrate'
+(This should tell Django to create a database table for each of your classes. For more information about migrating in Django see https://www.geeksforgeeks.org/django-basic-app-model-makemigrations-and-migrate/)
+### Model Manager
+Django has built in functionality to to access the database using the python command line. With this tool an administrator can see what objects they have without needing a scripting language. to access the ptyhon command line use:
+'    python manage.py shell
+    from portfolio_app.models import project
+    project.objects.all()'
