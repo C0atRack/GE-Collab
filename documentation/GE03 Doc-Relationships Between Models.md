@@ -1,5 +1,7 @@
 # Relations between Models
 
+By Brennan R.
+
 ## Synopses
 
 Models in Django are not always completely distinct, separate units. Often, data from one model is related to another. For example, in a project portfolio app, a portfolio model may be affiliated with a project model. Another example might be a user-account model is is affiliated with blog posts the user makes. In any case, as developers it is important to be able to represent the relations between models so we can easily interact with them in a more fluid manner. 
