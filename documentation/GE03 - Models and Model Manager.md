@@ -6,3 +6,4 @@ By Brett Ford
 2. Activate the server
 
 ### Creating Models
+To create a new model, 
