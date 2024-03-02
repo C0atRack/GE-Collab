@@ -47,6 +47,9 @@ This should tell Django to create a database table for each of your classes. For
 ### Model Manager
 Django has built in functionality to to access the database using the python command line. With this tool an administrator can see what objects they have without needing a scripting language. to access the ptyhon command line use:
 
-`    python manage.py shell`    
+`    python manage.py shell`  
+you must import your porject using this code
 `    from portfolio_app.models import project`    
-`    project.objects.all()'`
+and then from here queries can be made such as 
+`    project.objects.all()`
+to display all of the objects. 
