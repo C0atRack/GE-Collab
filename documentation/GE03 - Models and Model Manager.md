@@ -1,4 +1,4 @@
-# Static File Setup
+# Creating Models and Model Manager
 By Brett Ford
 
 ### Prerequisites
