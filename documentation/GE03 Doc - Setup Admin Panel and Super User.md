@@ -1,4 +1,4 @@
-### Django Admin Site Setup
+## Django Admin Site Setup
 ##### Written by Kass Ramirez
 
 ### 1. Create Models
