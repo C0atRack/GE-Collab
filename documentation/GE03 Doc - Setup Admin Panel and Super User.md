@@ -17,7 +17,7 @@ Django uses an Object-Relational-Mapper (ORM) to map model definitions in the Dj
 4. Run your server with: `python3 manage.py runserver`
 5. Open your website here: [http://localhost:8000/](http://localhost:8000/)
 
-<!-- Insert 'migrations' here -->
+![Perform migrations](https://github.com/C0atRack/GE02-Collab/blob/main/images/GE03Doc%20-%20Admin%20Setup/Migrations.png?raw=true)
 
 **Note**: You'll need to run these commands every time your models change in a way that will affect the structure of the data being stored.
 
@@ -28,21 +28,21 @@ from .models import <myModelClass>
 
 admin.site.register(<myModelClass>)
 ```
-<!-- Insert 'registerModels' image here -->
+![Register Models](https://github.com/C0atRack/GE02-Collab/blob/main/images/GE03Doc%20-%20Admin%20Setup/RegisterModels.png?raw=true)
 
 ### 4. Create a Superuser
-To log into the admin site, we need a user account with Staff status enabled, and have permissions to manage all ojects. You can create a superuser with full access to the site using **manage.py**.
+To log into the admin site, you need a user account with Staff status enabled and permissions to manage all objects. You can create a superuser with full access to the site using **manage.py**.
 
 1. Go to your project directory in a command terminal
 2. Run this command: `python3 manage.py createsuperuser`
    i. You will be prompted for a username, email, and password. Store your password safely and don't forget it.
 4. Rerun the server with `python3 manage.py runserver`
 
-### Log in Admin Site
+### 5. Log in Admin Site
 Open your website's admin page here: [http://localhost:8000/admin](http://localhost:8000/admin)
 
 Login using the credentials you just created. You should not see something like this:
-<!-- Insert 'AdminSite1' image here -->
+![Admin Site](https://github.com/C0atRack/GE02-Collab/blob/main/images/GE03Doc%20-%20Admin%20Setup/AdminSite1.png?raw=true)
 
 This example shows an example registered model called `Students`. You should see the models you created and registered in the same area.
 
