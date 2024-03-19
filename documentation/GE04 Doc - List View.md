@@ -42,5 +42,40 @@ If index variables are needed in the url pattern, you can include them in the pa
 **Note:** When using a generic view, you must include `.as_view()` to properly call the function.
 
 ### Create List View Template
+Create a template with the same name you assigned `template_name` to in the view function. 
+
+**Note:** Generic views look for templates in `/application_name/the_model_name_list.html` within the `/application_name/templates/` directory.
+
+A list view template works the same as any other template. You should extend your base template first and then replace the block content. Below is an example of creating a list of students through the use of `containers`:
+```{python}
+<!-- inherit from base.html-->
+{% extends "portfolio_app/base_template.html" %}
 
 
+<!-- Replace block content in base_template.html -->
+<!-- Use generic class view to display a list view of active students -->
+{% block content %}
+    <h1>Student List</h1>
+    <!-- Template code to process students in list -->
+    {% if student_list %}
+        <div class="container">
+            {% for student in student_list %}
+            <div class="row py-2">
+                <div class="col-sm-auto">
+                    <!-- Get url for current student -->
+                    <ul>
+                        <li><a href="{{ student.get_absolute_url }}">{{ student.name }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-auto">
+                    <!-- Button to view current student's portfolio -->
+                    <a href="{{ student.get_absolute_url }}" class="btn btn-primary">View</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>            
+    {% else %}
+        <p>There are no students registered.</p>
+    {% endif %}
+{% endblock %}
+```
