@@ -21,10 +21,12 @@ The model should:
 
 ##Creating the HTML 
 The HTML file should include the following to make the form work:
-` <form action='' method ="*The METHOD*">`
-`{% csrf_token%}`
-`<table>`
-`</form>`
+```HTML
+<form action='' method ="*The METHOD*">
+{% csrf_token%}
+<table>
+</form>```
+
 
 ##Urls
 The urls.py file needs to be updated to include the new path
