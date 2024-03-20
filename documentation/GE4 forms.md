@@ -25,9 +25,14 @@ The HTML file should include the following to make the form work:
 <form action='' method ="*The METHOD*">
 {% csrf_token%}
 <table>
-</form>```
+</form>
+```
 
 
 ##Urls
 The urls.py file needs to be updated to include the new path
-`path('
+```python
+urlpatterns=[
+path('form page/<argument type:passed argument>', views.*views class*, name = "*project name*"),
+]
+```
