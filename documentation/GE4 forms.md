@@ -15,11 +15,16 @@ Django has tools that assist in the creation and editing of HTML forms for web a
 ##Creating the model on the forms page
 The model should:
 -inherit ModelForm
--have a nested class called Meta:  `class Meta:`
--have a model variable that references what model it is derived from: `model = User`
--have a field variable that has a list of all the attributes of the model as strings. The attributes must be identical to the attributes of the model on the model's page but as a string.  `fields =["paramater1", "Parameter2"]
-
-##Creating the HTML 
+-have a nested class called Meta:  
+-have a model variable that references what model it is derived from: ``
+-have a field variable that has a list of all the attributes of the model as strings. The attributes must be identical to the attributes of the model on the model's page but as a string.  
+```python
+class UserForm(ModelForm):
+  class Meta:
+    model = User
+    fields =["paramater1", "Parameter2"]
+```
+## Creating the HTML 
 The HTML file should include the following to make the form work:
 ```HTML
 <form action='' method ="*The METHOD*">
@@ -29,10 +34,17 @@ The HTML file should include the following to make the form work:
 ```
 
 
-##Urls
-The urls.py file needs to be updated to include the new path
+## Urls.py
+The urls.py file needs to be updated to include the new path. This needs to include the passed argument that will be needed in the form. For instance, to update a user's information, the user primary key needs to be passed. 
 ```python
 urlpatterns=[
 path('form page/<argument type:passed argument>', views.*views class*, name = "*project name*"),
 ]
 ```
+## views.py
+
+
+## The Views.py
+The form is created as a function under the views page. it receives as arguments the request that will be used as well as the key that will connect it to the database. it needs the form as a variable in function and 
+
+
