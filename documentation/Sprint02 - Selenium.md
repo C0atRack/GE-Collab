@@ -32,6 +32,7 @@ from django.urls import reverse
 ```
 
 These modules will include:
+
 - The `WebDriver` needed to control Firefox
 - The `By` selection utility (Needed to find )
 - The module needed to select an option from a list on forms
@@ -168,7 +169,18 @@ For example, to find the register account button, add data to the fields, and cl
         self.selenium.find_element(By.ID, "register_submit").click()
 ```
 
-### Tips for Creating Tests
+### Uploading files
+
+Selenium is not able to interact with the upload-file dialog required to upload a file on a form. Instead what you can do is send the file input element the path to the file you wish to upload. When the form is submitted, the browser will attach the file to the form when it sends it.
+
+Sample code:
+
+```python
+fileInput = self.selenium.find_element(By.CSS_SELECTOR, "input[type='file']")
+fileInput.send_keys(<path to file>)
+```
+
+## Tips for Creating Tests
 
 When creating a test, think about the interactions a user will perform. The goal with Selenium is to mimic these interactions within code and make sure they work as expected.
 Lo-Fi mock ups are great for planning how the code will interact with your web app.
