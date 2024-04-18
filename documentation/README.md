@@ -19,6 +19,6 @@
 - [Django's DetailView](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/GE04%20Doc%20-%20DetailView.md) by Brennan
 - [Django's ListView](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/GE04%20Doc%20-%20List%20View.md) by Kass
 - [Django Forms](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/GE04%20Doc%20-Forms.md) by Brett
-- [Unit Testing Django with Selenium](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/Sprint02%20-%20Selenium.md)
+- [Unit Testing Django with Selenium](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/Sprint02%20-%20Selenium.md) by Brennan
 
 - [Bootstrap Codesnippits](https://github.com/C0atRack/GE02-Collab/blob/main/documentation/Bootstrap%20Codesnippits.md) - All
