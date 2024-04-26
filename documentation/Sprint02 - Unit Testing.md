@@ -51,4 +51,13 @@ and you should see something like this:
 - For urls with multiple parameters, you will need to set your kwargs like so:
 `url = reverse('<url_name>', kwargs={'param1': 'value1', 'param2': 'value2'})`
 
+[Video Tutorial for Testing URLs](https://youtu.be/0MrgsYswT1c?si=eAd0i4iaSEcdCQ1w)
+
 ### Testing Views
+[Video Tutorial for Testing Views](https://youtu.be/hA_VxnxCHbo?si=HDfK0Bj04tHhfEF7)
+
+### Testing Models
+[Video Tutorial for Testing Models](https://youtu.be/IKnp2ckuhzg?si=eMAgQvkT2GuvhNiw)
+
+### Testing Forms
+[Video Tutorial for Testing Forms](https://youtu.be/zUl-Tf-UEzw?si=YvvivbsCQIHB0LfJ)
